@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                ChatGPT Keep-Alive
-// @namespace           https://github.com/eiyen
+// @namespace           https://github.com/eiyen/ChatGPT-Keep-Alive
 // @version             1
 // @description:zh-CN   每隔30秒自动发送一次请求到ChatGPT，防止出现错误提示: "Something went wrong. If this issue persists, please contact us through our helper center at help.openai.com."
 // @description:en      Automatically ping ChatGPT every 30 seconds to prevent the error message: "Something went wrong. If this issue persists, please contact us through our helper center at help.openai.com."
