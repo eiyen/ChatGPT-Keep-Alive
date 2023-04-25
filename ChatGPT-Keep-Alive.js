@@ -6,6 +6,7 @@
 // @description:en      Automatically ping ChatGPT every 30 seconds to prevent the error message: "Something went wrong. If this issue persists, please contact us through our helper center at help.openai.com."
 // @homepage            宇吾
 // @match               https://chat.openai.com/*
+// @license             MIT
 // ==/UserScript==
 
 (() => {
