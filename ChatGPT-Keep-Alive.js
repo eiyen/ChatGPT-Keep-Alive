@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                ChatGPT Keep-Alive
 // @description         每隔30秒自动发送一次请求到ChatGPT，防止出现错误提示: "Something went wrong. If this issue persists, please contact us through our helper center at help.openai.com."
-// @version             0.1
+// @version             0.2
 // @author              eiyen
 // @namespace           https://github.com/eiyen/ChatGPT-Keep-Alive
 // @description:zh-CN   每隔30秒自动发送一次请求到ChatGPT，防止出现错误提示: "Something went wrong. If this issue persists, please contact us through our helper center at help.openai.com."
@@ -32,7 +32,8 @@
     fetch(apiEndpoint)
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          const currentTime = new Date().toLocaleString();
+          throw new Error(`Network response was not ok. Error occurred at: ${currentTime}`);
         }
       })
       .catch((error) => {
